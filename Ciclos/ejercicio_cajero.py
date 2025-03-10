@@ -18,7 +18,7 @@ while not salir:
             saldo -= retiro
             print(f'Tu nuevo saldo es: ${saldo:.2f\n}')
         else:
-            print(f'No cuentas con el saldo suficiente, Saldo actual es: ${saldo::.2f}\n')
+            print(f'No cuentas con el saldo suficiente, Saldo actual es: ${saldo:.2f}\n')
         saldo -= retiro
     elif(opcion == 3):
         deposito = float(input('Cuanto deseas depositar?: '))
