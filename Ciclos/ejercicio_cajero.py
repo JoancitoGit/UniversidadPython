@@ -13,10 +13,15 @@ while not salir:
     if(opcion == 1):
         print(f'Tu saldo es de: ${saldo}')
     elif(opcion == 2):
-        retiro = int(input('Cuanto deseas retirar?: '))
+        retiro = float(input('Cuanto deseas retirar?: '))
+        if retiro <= saldo:
+            saldo -= retiro
+            print(f'Tu nuevo saldo es: ${saldo:.2f\n}')
+        else:
+            print(f'No cuentas con el saldo suficiente, Saldo actual es: ${saldo::.2f}\n')
         saldo -= retiro
     elif(opcion == 3):
-        deposito = int(input('Cuanto deseas depositar?: '))
+        deposito = float(input('Cuanto deseas depositar?: '))
         saldo += deposito
     elif(opcion == 4):
         print('Hasta luego!')
