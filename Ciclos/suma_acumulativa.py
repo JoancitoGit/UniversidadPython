@@ -4,8 +4,9 @@ MAXIMO = 5
 numero = 1
 suma = 0
 
-while numero <= 5:
+while numero <= MAXIMO:
+    print(f'\nAcumulador suma + numero -> {suma} + {numero}')
     suma += numero
-    print(suma)
     numero += 1
 
+print(f'\nResultado de la suma acumulada: {suma}')
