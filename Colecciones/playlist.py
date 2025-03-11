@@ -3,18 +3,16 @@ print('*** Playlist de Canciones ***')
 # Creamos la lista vacía
 lista_reproduccion = []
 
-# Empezamos a agregar canciones
+numero_canciones = int(input('Cuantas canciones deseas agregar? '))
 
-lista_reproduccion.append('Hotel California - Eagles')
-lista_reproduccion.append('Staying Alive - Bee Gees')
-lista_reproduccion.append(('Dream on - Aerosmith'))
+# Iteramos cada elemento de la lista para agregar un nuevo elemento
+for indice in range(numero_canciones):
+    cancion = input(f'Proporciona la cancion {indice}: ')
+    lista_reproduccion.append(cancion)
 
 # Ordenar la lista en orden alfabetico. sort
 lista_reproduccion.sort() # reverse=True
 
-# Mostrar la lista de canciones
-print(f'\n Lista de Reproducción en orden alfabético: ')
-print(lista_reproduccion)
 
 # Mostrar la lista iterando cada uno de los elementos
 for cancion in lista_reproduccion:
