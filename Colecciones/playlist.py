@@ -7,7 +7,7 @@ numero_canciones = int(input('Cuantas canciones deseas agregar? '))
 
 # Iteramos cada elemento de la lista para agregar un nuevo elemento
 for indice in range(numero_canciones):
-    cancion = input(f'Proporciona la cancion {indice}: ')
+    cancion = input(f'Proporciona la cancion {indice + 1}: ')
     lista_reproduccion.append(cancion)
 
 # Ordenar la lista en orden alfabetico. sort
