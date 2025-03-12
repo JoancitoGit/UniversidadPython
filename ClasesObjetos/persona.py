@@ -15,6 +15,8 @@ class Persona:
         print(f'''Persona:
         Nombre: {self.nombre}
         Apellido: {self.apellido}''')
+        print(f'Dirección de memoria Self: {id(self)}')
+        print(f'Dirección de memoria hexadecimal Self: {hex(id(self))}')
 
 # Creacion de objetos
 if __name__ == '__main__':
