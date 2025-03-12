@@ -11,3 +11,8 @@ celsius = float(input('Ingresa la temperatura en Celsius: '))
 resultado = celsius_fahrenheit(celsius)
 
 print(f'{celsius} C a F: {resultado:.2f}')
+
+fahrenheit = float(input('Ingresa la temperatura en Fahrenheit: '))
+resultado = fahrenheit_celsius(fahrenheit)
+
+print(f'{fahrenheit} F a C: {resultado}')
