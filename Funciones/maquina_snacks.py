@@ -33,7 +33,13 @@ def comprar_snack():
         print(f'Snack NO encontrado con el id: {id_snack}')
 
 def mostrar_ticket():
-    pass
+    ticket = '\t --- Ticket de Venta ---'
+    total = 0
+    for producto in productos:
+        ticket += f'\n\t- {producto.get('nombre')} - ${producto.get('precio')}'
+        total += producto.get('precio')
+    ticket += f'\n\tTotal: ${total}'
+    print(ticket)
 
 
 # Programa principal
