@@ -26,7 +26,16 @@ def agregar_producto():
     print('Producto agregado al inventario')
 
 def buscar_producto_por_id():
-    pass
+    # pass
+    print('--- Buscar Producto por ID ---')
+    id_buscar = int(input('Ingresa el ID a buscar: '))
+    for producto in inventario:
+        if(producto.get('id') == id_buscar):
+            print('\nInformación del producto encontrado: ')
+            print(f'Id: {producto.get('id')}, Nombre: {producto.get('nombre')},'
+                  f'Precio: {producto.get('precio')}, Cantidad: {producto.get('cantidad')}')
+            return
+    print('\n Producto NO encontrado')
 
 if __name__ == '__main__':
     while True:
