@@ -11,7 +11,10 @@ snacks = [
 productos = []
 
 def mostrar_snacks():
-    pass
+    print('--- Snacks Disponibles ---')
+    for snack in snacks:
+        print(f'\tId: {snack.get('id')}, Nombre: {snack.get('nombre')},'
+              f'Precio: {snack.get('precio')}')
 
 def comprar_snack():
     pass
