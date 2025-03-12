@@ -16,11 +16,25 @@ def mostrar_snacks():
         print(f'\tId: {snack.get('id')}, Nombre: {snack.get('nombre')},'
               f'Precio: {snack.get('precio')}')
 
+def buscar_snack_por_id(id):
+    for snack in snacks:
+        if(snack.get('id') == id):
+            return snack
+    # Si llegamos al final y no se encontró el snack regresa None
+    return None
+
 def comprar_snack():
-    pass
+    id_snack = int(input('Qué snack quieres comprar (id): '))
+    snack_encontrado = buscar_snack_por_id(id_snack)
+    if snack_encontrado is not None:
+        productos.append(snack_encontrado)
+        print(f'Snack agregado: {snack_encontrado}')
+    else:
+        print(f'Snack NO encontrado con el id: {id_snack}')
 
 def mostrar_ticket():
     pass
+
 
 # Programa principal
 if __name__ == '__main__':
