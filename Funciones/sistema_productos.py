@@ -15,7 +15,15 @@ def mostrar_inventario():
               f'Precio: ${producto.get('precio')}, Cantidad: {producto.get('cantidad')}')
 
 def agregar_producto():
-    pass
+    # pass
+    print('--- Agregar Nuevo Producto ---')
+    id = int(input('ID: '))
+    nombre = input('Nombre: ')
+    precio = float(input('Precio: '))
+    cantidad = int(input('Cantidad: '))
+    nuevo_producto = {'id': id, 'nombre': nombre, 'precio': precio, 'cantidad': cantidad}
+    inventario.append(nuevo_producto)
+    print('Producto agregado al inventario')
 
 def buscar_producto_por_id():
     pass
@@ -37,7 +45,7 @@ if __name__ == '__main__':
         elif opcion == 3: # Buscar producto por id
             buscar_producto_por_id()
         elif opcion == 4: # Salir
-            print('Hasta Luego')
+            print('Hasta Luego!')
             break
         else:
             print('Opción inválida, proporciona una opción válida')
