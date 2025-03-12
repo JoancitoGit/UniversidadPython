@@ -10,5 +10,6 @@ def factorial_recursiva(numero):
         print(f'El resultado factorial parcial {numero} es: {factorial_parcial}')
         return factorial_parcial
 
-resultado = factorial_recursiva(5)
-print(f'El factorial de 5 es: {resultado}')
+numero = 100
+resultado = factorial_recursiva(numero)
+print(f'El factorial de {numero} es: {resultado}')
