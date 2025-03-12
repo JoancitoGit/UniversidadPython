@@ -7,3 +7,9 @@ persona = {
     'ciudad': 'Tepic',
     'profesion': 'Ingeniero'
 }
+
+print(f'Diccionario de persona: {persona}')
+
+# Acceder a los elementos del diccionario
+print(f'Nombre: {persona["nombre"]}')
+print(f'Edad: {persona.get("edad")}')
