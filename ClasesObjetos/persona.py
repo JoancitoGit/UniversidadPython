@@ -8,7 +8,7 @@ class Persona:
         self.apellido = apellido;
 
     def mostrar_persona(self):
-        print(f'''Persona:
+        print(f'''Persona:}:
         Nombre: {self.nombre}
         Apellido: {self.apellido}''')
 
@@ -18,4 +18,8 @@ if __name__ == '__main__':
     persona1 = Persona() # Crea un objeto vacío en memoria
     persona1.inicializar_persona('Joan', 'García')
     persona1.mostrar_persona()
-    
+
+    # Creamos un segundo objeto
+    persona2 = Persona()
+    persona2.inicializar_persona('Ian', 'Sanchez')
+    persona2.mostrar_persona()
