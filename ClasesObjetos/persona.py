@@ -11,3 +11,11 @@ class Persona:
         print(f'''Persona:
         Nombre: {self.nombre}
         Apellido: {self.apellido}''')
+
+# Creacion de objetos
+if __name__ == '__main__':
+    # Creacion de un primer objeto
+    persona1 = Persona() # Crea un objeto vacío en memoria
+    persona1.inicializar_persona('Joan', 'García')
+    persona1.mostrar_persona()
+    
