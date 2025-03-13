@@ -51,5 +51,13 @@ if __name__ == '__main__':
     coche1.conducir()
     # Atributo de marca del coche 1
     coche1.marca = 'Yaris 3'
+    print(f'Atributos del coche 1: {coche1.__dict__}')
     print(f'Atributo marca coche1: {coche1.marca}')
+    # Intentar agregar un nuevo atributo
+    setattr(coche1, 'nuevo_atributo', 'Valor nuevo atributo')
+    print(coche1.nuevo_atributo)
+    # Segundo objeto
+    coche2 = Coche('Chevrolet', 'Trax', 'Blanco')
+    coche2.conducir()
+    #print(f'Nuevo atributo coche2 {coche2.nuevo_atributo}')
 
