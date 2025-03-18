@@ -20,3 +20,6 @@ if __name__ == '__main__':
 
     persona1.mostrar_persona()
     persona2.mostrar_persona()
+
+    # Imprimir el valor del contador de objetos de personas
+    print(f'Contador objetos Persona: {Persona.contador_personas}')
