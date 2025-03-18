@@ -1,35 +1,55 @@
 class Aritmetica:
 
     def __init__(self, operando1 = None, operando2 = None):
-        self.operando1 = operando1
-        self.operando2 = operando2
+        self._operando1 = operando1
+        self._operando2 = operando2
 
 
     def sumar(self):
-        return self.operando1 + self.operando2
+       resultado = self._operando1 + self._operando2
+       print(f'Resultado suma: {resultado}')
 
     def restar(self):
-        return self.operando1 - self.operando2
+        resultado = self._operando1 - self._operando2
+        print(f'Resultado resta: {resultado}')
 
     def multiplicar(self):
-        return self.operando1 * self.operando2
+        resultado = self._operando1 * self._operando2
+        print(f'Resultado multiplicación: {resultado}')
 
     def dividir(self):
-        return self.operando1 / self.operando2
+        resultado = self._operando1 / self._operando2
+        print(f'Resultado división: {resultado}')
+
+    @property
+    def operando1(self):
+        return self._operando1
+
+    @operando1.setter
+    def operando1(self, operando1):
+        self._operando1 = operando1
+
+    @property
+    def operando2(self):
+        return self._operando2
+
+    @operando2.setter
+    def operando2(self, operando2):
+        self._operando2 = operando2
 
 if __name__ == '__main__':
+    print('*** Ejemplo Clase Aritmética ***')
     aritmetica1 = Aritmetica(5,7)
-    print(aritmetica1.sumar())
-
-    aritmetica2 = Aritmetica(12,16)
-    print(aritmetica2.sumar())
-    #Tercer objeto
-    aritmetica3 = Aritmetica(7)
-    aritmetica3.operando2 = 9
-    print(aritmetica3.sumar())
-
-    # Cuarto Objeto
-    aritmetica4 = Aritmetica()
-    aritmetica4.operando1 = 10
-    aritmetica4.operando2 = 20
-    print(aritmetica4.sumar())
+    print('---Primer Objeto---')
+    print(f'Valor operando1 del objeto aritmetica1: {aritmetica1.operando1}')
+    print(f'Valor operando2 del objeto aritmetica1: {aritmetica1.operando2}')
+    aritmetica1.sumar()
+    aritmetica1.restar()
+    aritmetica1.multiplicar()
+    aritmetica1.dividir()
+    aritmetica1.operando1 = 9
+    aritmetica1.operando2 = 15
+    aritmetica1.sumar()
+    aritmetica1.restar()
+    aritmetica1.multiplicar()
+    aritmetica1.dividir()
