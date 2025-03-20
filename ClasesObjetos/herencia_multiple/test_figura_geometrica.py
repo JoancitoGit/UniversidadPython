@@ -16,4 +16,5 @@ rectangulo1.ancho = 15
 print(f'Cálculo área rectangulo: {rectangulo1.calcular_area()}')
 print(rectangulo1)
 
+# Methos Resolution Order
 print(Cuadrado.mro())
