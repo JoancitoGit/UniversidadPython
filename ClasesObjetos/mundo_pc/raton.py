@@ -12,8 +12,7 @@ class Raton(DispositivoEntrada):
         super().__init__(marca, tipo_entrada)
 
     def __str__(self):
-        return f'''Id: {self.id_raton}, Marca: {self._marca}, 
-               Tipo Entrada: {self._tipo_entrada}'''
+        return f'''Id: {self.id_raton}, Marca: {self._marca}, Tipo Entrada: {self._tipo_entrada}'''
 
 # Codigo principal
 if __name__ == '__main__':
